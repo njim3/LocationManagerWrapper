@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		209B6DEB1F4EA687006D82CD /* LocationMgrWrapper.m in Sources */ = {isa = PBXBuildFile; fileRef = 209B6DEA1F4EA687006D82CD /* LocationMgrWrapper.m */; };
 		20CA78221F4EA43D000DACA8 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CA78211F4EA43D000DACA8 /* main.m */; };
 		20CA78251F4EA43E000DACA8 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CA78241F4EA43E000DACA8 /* AppDelegate.m */; };
 		20CA78281F4EA43E000DACA8 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CA78271F4EA43E000DACA8 /* ViewController.m */; };
@@ -35,6 +36,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		209B6DE91F4EA687006D82CD /* LocationMgrWrapper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LocationMgrWrapper.h; sourceTree = "<group>"; };
+		209B6DEA1F4EA687006D82CD /* LocationMgrWrapper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LocationMgrWrapper.m; sourceTree = "<group>"; };
+		209B6DEC1F4EAB75006D82CD /* Singleton.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Singleton.h; sourceTree = "<group>"; };
 		20CA781D1F4EA43D000DACA8 /* LocationManagerWrapper.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = LocationManagerWrapper.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		20CA78211F4EA43D000DACA8 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		20CA78231F4EA43D000DACA8 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -78,6 +82,16 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		209B6DE81F4EA62F006D82CD /* LocationManager */ = {
+			isa = PBXGroup;
+			children = (
+				209B6DEC1F4EAB75006D82CD /* Singleton.h */,
+				209B6DE91F4EA687006D82CD /* LocationMgrWrapper.h */,
+				209B6DEA1F4EA687006D82CD /* LocationMgrWrapper.m */,
+			);
+			path = LocationManager;
+			sourceTree = "<group>";
+		};
 		20CA78141F4EA43D000DACA8 = {
 			isa = PBXGroup;
 			children = (
@@ -106,6 +120,7 @@
 				20CA78261F4EA43E000DACA8 /* ViewController.h */,
 				20CA78271F4EA43E000DACA8 /* ViewController.m */,
 				20CA78291F4EA43E000DACA8 /* Main.storyboard */,
+				209B6DE81F4EA62F006D82CD /* LocationManager */,
 				20CA782C1F4EA43E000DACA8 /* Assets.xcassets */,
 				20CA782E1F4EA43E000DACA8 /* LaunchScreen.storyboard */,
 				20CA78311F4EA43E000DACA8 /* Info.plist */,
@@ -279,6 +294,7 @@
 				20CA78281F4EA43E000DACA8 /* ViewController.m in Sources */,
 				20CA78251F4EA43E000DACA8 /* AppDelegate.m in Sources */,
 				20CA78221F4EA43D000DACA8 /* main.m in Sources */,
+				209B6DEB1F4EA687006D82CD /* LocationMgrWrapper.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -429,9 +445,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = S69MVL5JLT;
 				INFOPLIST_FILE = LocationManagerWrapper/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cnbm.LocationManagerWrapper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Debug;
 		};
@@ -441,9 +459,11 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				DEVELOPMENT_TEAM = S69MVL5JLT;
 				INFOPLIST_FILE = LocationManagerWrapper/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.cnbm.LocationManagerWrapper;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 			};
 			name = Release;
 		};
@@ -516,6 +536,7 @@
 				20CA784C1F4EA43E000DACA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		20CA784D1F4EA43E000DACA8 /* Build configuration list for PBXNativeTarget "LocationManagerWrapperTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +545,7 @@
 				20CA784F1F4EA43E000DACA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		20CA78501F4EA43E000DACA8 /* Build configuration list for PBXNativeTarget "LocationManagerWrapperUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +554,7 @@
 				20CA78521F4EA43E000DACA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

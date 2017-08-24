@@ -7,8 +7,11 @@
 //
 
 #import "ViewController.h"
+#import "LocationMgrWrapper.h"
 
 @interface ViewController ()
+
+@property (weak, nonatomic) IBOutlet UILabel *locationLbl;
 
 @end
 
@@ -16,13 +19,38 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    
 }
 
 
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)getNewLocationAction:(id)sender {
+    
+    [[LocationMgrWrapper shareManager] getCurrentLocation:^(CLLocation *location,
+                            CLPlacemark *placeMark, NSString *error) {
+        
+        if (error) {
+            self.locationLbl.text = error;
+        } else {
+            
+            NSString* locationStr = [NSString stringWithFormat:
+                @"Country: %@\n"
+                 "Locality: %@\n"
+                 "SubLocality: %@\n"
+                 "ThoroughFare: %@\n"
+                 "SubThoroughFare: %@\n"
+                 "Name: %@",
+                 placeMark.country, placeMark.locality, placeMark.subLocality,
+                 placeMark.thoroughfare, placeMark.subThoroughfare,
+                 placeMark.name];
+            
+            self.locationLbl.text = locationStr;
+        }
+    }];
 }
 
 
