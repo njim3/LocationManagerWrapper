@@ -27,7 +27,9 @@ SingleImplementation(Manager)
     if (!_locManager) {
         
         _locManager = [[CLLocationManager alloc] init];
+        
         _locManager.delegate = self;
+        _locManager.desiredAccuracy = kCLLocationAccuracyBest;
         
         // iOS Version >= 8.0
         NSDictionary* infoDict = [[NSBundle mainBundle] infoDictionary];

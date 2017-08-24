@@ -14,8 +14,6 @@
 		20CA782B1F4EA43E000DACA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20CA78291F4EA43E000DACA8 /* Main.storyboard */; };
 		20CA782D1F4EA43E000DACA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 20CA782C1F4EA43E000DACA8 /* Assets.xcassets */; };
 		20CA78301F4EA43E000DACA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 20CA782E1F4EA43E000DACA8 /* LaunchScreen.storyboard */; };
-		20CA783B1F4EA43E000DACA8 /* LocationManagerWrapperTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CA783A1F4EA43E000DACA8 /* LocationManagerWrapperTests.m */; };
-		20CA78461F4EA43E000DACA8 /* LocationManagerWrapperUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 20CA78451F4EA43E000DACA8 /* LocationManagerWrapperUITests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -50,11 +48,7 @@
 		20CA782F1F4EA43E000DACA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		20CA78311F4EA43E000DACA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20CA78361F4EA43E000DACA8 /* LocationManagerWrapperTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocationManagerWrapperTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		20CA783A1F4EA43E000DACA8 /* LocationManagerWrapperTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationManagerWrapperTests.m; sourceTree = "<group>"; };
-		20CA783C1F4EA43E000DACA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		20CA78411F4EA43E000DACA8 /* LocationManagerWrapperUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = LocationManagerWrapperUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		20CA78451F4EA43E000DACA8 /* LocationManagerWrapperUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LocationManagerWrapperUITests.m; sourceTree = "<group>"; };
-		20CA78471F4EA43E000DACA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,8 +90,6 @@
 			isa = PBXGroup;
 			children = (
 				20CA781F1F4EA43D000DACA8 /* LocationManagerWrapper */,
-				20CA78391F4EA43E000DACA8 /* LocationManagerWrapperTests */,
-				20CA78441F4EA43E000DACA8 /* LocationManagerWrapperUITests */,
 				20CA781E1F4EA43D000DACA8 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -135,24 +127,6 @@
 				20CA78211F4EA43D000DACA8 /* main.m */,
 			);
 			name = "Supporting Files";
-			sourceTree = "<group>";
-		};
-		20CA78391F4EA43E000DACA8 /* LocationManagerWrapperTests */ = {
-			isa = PBXGroup;
-			children = (
-				20CA783A1F4EA43E000DACA8 /* LocationManagerWrapperTests.m */,
-				20CA783C1F4EA43E000DACA8 /* Info.plist */,
-			);
-			path = LocationManagerWrapperTests;
-			sourceTree = "<group>";
-		};
-		20CA78441F4EA43E000DACA8 /* LocationManagerWrapperUITests */ = {
-			isa = PBXGroup;
-			children = (
-				20CA78451F4EA43E000DACA8 /* LocationManagerWrapperUITests.m */,
-				20CA78471F4EA43E000DACA8 /* Info.plist */,
-			);
-			path = LocationManagerWrapperUITests;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -302,7 +276,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20CA783B1F4EA43E000DACA8 /* LocationManagerWrapperTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -310,7 +283,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				20CA78461F4EA43E000DACA8 /* LocationManagerWrapperUITests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
